@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import { createStyles, makeStyles} from '@material-ui/core/styles';
 import List from '@material-ui/core/List';
 import { Chat } from "./index";
@@ -21,11 +21,11 @@ const Chats = (props) => {
   return (
     <List className={classes.chats} id={"scroll-area"}>
       {props.chats.map((chat, index) => {
-        return <Chat text={chat.text} type={chat.type} key={ index.toString()}/>
+        return <Chat text={chat.text} type={chat.type} key={index.toString()} />
       })}
     </List>
 
   )
-}
+};
 
 export default Chats

@@ -13,7 +13,6 @@ const useStyles = makeStyles(() => (
         backgroundColor: "#FFB549",
         color:"#fff"
       }
-
     }
   })
 ));
@@ -22,10 +21,10 @@ const Answer = (props) => {
   const classes = useStyles();
 
   return (
-    <Button className={ classes.button} variant="outlined" onClick={ ()=>props.select(props.content,props.nextId)}>
+    <Button className={classes.button} variant="outlined" onClick={() => props.select(props.content, props.nextId)}>
       {props.content}
     </Button>
-   )
-}
+  )
+};
 
 export default Answer
